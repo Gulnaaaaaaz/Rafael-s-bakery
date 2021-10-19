@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Currency Calculator</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+	<link rel="icon" href="https://freepngimg.com/thumb/dollar/1-2-dollar-transparent.png">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+</head>
+<style>
+	body,html{
+		text-align: center;
+		background-image: url("https://images.unsplash.com/photo-1607728285423-a94d41a4d2f6?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80");
+		background-repeat: no-repeat;
+		background-size: cover;
+		font-family: 'Montserrat', sans-serif;
+	}
+	#amount{
+		width: 15%;
+		margin-left: 42.5%;
+	}
+	.form-control{
+		width: 4.86%;
+	}
+	h1{
+		color: white;
+		font-weight: bold;
+	}
+</style>
+<body>
+	<br><br><br><br><br><br><br><br>
+<div>
+  <div class="container">
+   <h1>Currency Calculator</h1>
+   <p class="text-white" style="font-size: 20px;">The price of the iPhone:</p>
+   <form class="form-inline">
+     <div class="form-group mb-2">
+        <input type="number" class="form-control" id="amount">
+     </div>
+     <div class="form-group mx-sm-3 mb-2">
+        <select class="form-control" id="currency-1" required style="margin-left: 41.1%;">
+          <option>EUR</option>
+          <option>USD</option>
+          <option>KZT</option>
+        </select>
+      </div>
+      <div class="form-group mx-sm-3 mb-2" style="display: flex; margin-top: -3.16%;">
+        <label style="margin-left: 46.8%; color: white;">convert to</label>
+        <select class="form-control" id="currency-2" required style="margin-left: 0.9%; margin-top: -0.3%">
+          <option>USD</option>
+          <option>EUR</option>
+          <option>KZT</option>
+        </select>
+      </div>  
+      <button class="btn calculate-btn btn-primary mb-2">Convert</button>
+    </form>
+    <input type="button" class="btn btn-primary" value="Back" style="width: 7%;" onclick="location.href = 'apple.html'">
+    <div class="result"><br>
+      <p style="background-color: white; width: 20%; margin-left: 40%; border-radius: 5px;">
+        <span class="given-amount"></span> 
+        <span class="base-currency"></span>
+        <span class="final-result"></span> 
+        <span class="second-currency"></span>
+      </p>
+    </div>
+  </div> 
+</div>
+</body>
+<script>
+var crrncy = {'EUR': {'KZT': 505, 'USD': 0.83}, 'USD': {'KZT': 418, 'EUR': 1.2}}
+var btn = document.querySelector('.calculate-btn');
+var baseCurrencyInput = document.getElementById('currency-1');
+var secondCurrencyInput = document.getElementById('currency-2');
+var amountInput = document.getElementById('amount');
+var toShowAmount = document.querySelector('.given-amount');
+var toShowBase = document.querySelector('.base-currency');
+var toShowSecond = document.querySelector('.second-currency');
+var toShowResult = document.querySelector('.final-result');
+
+function convertCurrency(event) {
+  event.preventDefault();
+  var amount = amountInput.value;
+  var from = baseCurrencyInput.value;
+  var to = secondCurrencyInput.value;
+  var result = 0;
+  
+  try{
+    if (from == to){
+      result = amount;
+    } else {
+     result = amount * crrncy[from][to];
+  }
+  }
+  catch(err) {
+    result = amount * (1 / crrncy[to][from]);
+  }
+  
+  toShowAmount.innerHTML = amount;
+  toShowBase.textContent = from + ' = ';
+  toShowSecond.textContent = to;
+  toShowResult.textContent = result; 
+}
+
+btn.addEventListener('click', convertCurrency);
+</script>
+</html>	

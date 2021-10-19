@@ -1,0 +1,361 @@
+body, html{
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  font-family: 'Montserrat', sans-serif;
+  height: 100%;
+  overflow: auto;
+}
+body{
+  background-color: #515459;
+}
+.carousel-inner{
+  text-align: center;
+  width: 100%;
+}
+.home{
+  list-style-type: none;
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  margin-top: 1%;
+}
+.home li a{
+  text-decoration: none; 
+}
+.home:hover li:not(:hover) a{ 
+  transition: 0.3s;
+  opacity: 0.2;
+}
+.home li{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  padding: 40px;
+}
+#Covid{
+  background-color: #2F76FF;
+  text-align: center;
+}
+.example1{
+  margin-top: -0.35%;
+}
+#home a{
+  color: white;
+}
+a:link {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+a:active {
+  text-decoration: underline;
+}
+.iPhone{
+  text-align: center;
+}
+#home2{
+  background-color: #F4F4F4;
+  text-align: center;
+}
+#piii{
+  color: white;
+  font-size: 22px;
+}
+#Contacts{
+  text-align: center;
+  margin-top: -0.1%;
+}
+.Copyright{
+  font-weight: normal;
+  font-size: 13px;
+}
+.Copyright li{
+  list-style-type: none;
+  padding: 0px 29px;
+  font-weight: bold;
+}
+.Copyright li a{
+  color: black
+}
+@media(max-width: 1000px){
+  .Copyright{
+    display: flex;
+  }
+  .Copyright li{
+    padding: 0px 5px;
+  }
+  .container{
+    margin-top: 10%;
+    padding: 100%;
+  }
+}
+@media(max-width: 810px){
+  .container{
+    margin-top: 50%;
+
+  }
+}
+@media(max-width: 767px){
+  .container{
+    margin-top: 240%;
+
+  }
+  .Video{
+    margin-bottom: -150%;
+  }
+}
+@media(max-width: 580px){
+
+  .carouseliwe{
+
+  }
+}
+@media(max-width: 720px){
+  .container{
+    margin-top: 300%;
+
+  }
+}
+@media(max-width:500px){
+  .container{
+    margin-top: 360%;
+
+  }
+}
+@media(max-width: 450px){
+  .Copyright{
+    padding:0px 0px ;
+    display: flex;
+        flex-direction: column;
+  }
+  .container{
+    margin-top: 420%;
+
+  }
+}
+@media(max-width: 360px){
+
+  .container{
+    margin-top: 480%;
+
+  }
+}
+@media(max-width: 300px){
+
+  .container{
+    margin-top: 540%;
+
+  }
+}
+@media(max-width: 280px){
+
+  .container{
+    margin-top: 600%;
+
+  }
+}
+@media(max-width: 260px){
+  .container{
+visibility: hidden;
+  }
+}
+.Video{
+  margin-top: -1%;
+}
+hr.line{
+  border: 5px solid black;
+}
+hr.line2{
+  border: 5px solid black;
+}
+#---{
+  margin-top: 0.5%;
+  cursor: pointer;
+  position: left;
+}
+.sidebarr{
+  height: 100%;
+  width: 0;
+  position: fixed;
+  background-color: black;
+  overflow-x: hidden;
+  transition: 0.7s;
+  padding-top: 3%;
+  z-index: 1;
+}
+.sidebarr a {
+  padding: 5% 5% 5% 22%;
+  text-decoration: none;
+  font-size: 120%;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+.sidebarr a:hover {
+  color: #f1f1f1;
+}
+.sidebarr .closebtn {
+  position: absolute;
+  top: 9%;
+  right: 5%;
+  font-size: 270%;
+}
+.photo{
+  background-image: url("https://i.ytimg.com/vi/6gPoOKq_iaU/maxresdefault.jpg");
+  height: 110%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.photo2{
+  background-image: url("https://www.ixbt.com/img/n1/news/2020/2/6/Apple-Park-FB_large.jpg");
+  height: 130%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.photo3{
+	margin-top: -2.5%;
+  background-image: url("https://cdn-0.idownloadblog.com/wp-content/uploads/2017/08/iOS-11-teaser-iPhone-iPad-MacBook-Apple-Watch-Home-app.jpg");
+  height: 110%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.example1 {
+ margin-top: -1.1%;
+ height: 70px;  
+ overflow: hidden;
+ position: relative;
+ background-image: url("https://www.itl.cat/pngfile/big/314-3146325_universe-wallpaper-4k-1440-x-900-universe.jpg");
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+ font-family: verdana;
+    font-size: 15px;
+  text-shadow: 1px 1px 1px #919191,
+               1px 2px 1px #919191,
+               1px 3px 1px #919191,
+               1px 4px 1px #919191,
+               1px 5px 1px #919191,
+               1px 6px 1px #919191,
+               1px 7px 1px #919191,
+               1px 8px 1px #919191,
+               1px 9px 1px #919191,
+               1px 5px 1px #919191,
+               1px 15px 6px rgba(16,16,16,0.4),
+               1px 22px 10px rgba(16,16,16,0.2),
+               1px 25px 35px rgba(16,16,16,0.2),
+               1px 30px 60px rgba(16,16,16,0.4);
+}
+.example1 h3 {
+ font-size: 3em;
+ color: white;
+ font-weight: bold;
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ margin: 0;
+ line-height: 160%;
+ text-align: center;
+ /* Starting position */
+ -moz-transform:translateX(100%);
+ -webkit-transform:translateX(100%);  
+ transform:translateX(100%);
+ /* Apply animation to this element */  
+ -moz-animation: example1 15s linear infinite;
+ -webkit-animation: example1 15s linear infinite;
+ animation: example1 15s linear infinite;
+}
+/* Move it (define the animation) */
+@-moz-keyframes example1 {
+ 0%   { -moz-transform: translateX(100%); }
+ 100% { -moz-transform: translateX(-100%); }
+}
+@-webkit-keyframes example1 {
+ 0%   { -webkit-transform: translateX(100%); }
+ 100% { -webkit-transform: translateX(-100%); }
+}
+@keyframes example1 {
+ 0%   { 
+ -moz-transform: translateX(100%); /* Firefox bug fix */
+ -webkit-transform: translateX(100%); /* Firefox bug fix */
+ transform: translateX(100%);     
+ }
+ 100% { 
+ -moz-transform: translateX(-100%); /* Firefox bug fix */
+ -webkit-transform: translateX(-100%); /* Firefox bug fix */
+ transform: translateX(-100%); 
+ }
+}
+.container {
+  display: flex;
+  width: 100%;
+  padding: 4% 2%;
+  box-sizing: border-box;
+  height: 100vh;
+  position: relative;
+}
+
+.box {
+  flex: 1;
+  overflow: hidden;
+  transition: .5s;
+  margin: 0 2%;
+  box-shadow: 0 20px 30px rgba(0,0,0,.1);
+  line-height: 0;
+}
+
+.box > img {
+  width: 200%;
+  height: calc(100% - 10vh);
+  object-fit: cover; 
+  transition: .5s;
+}
+
+.box > span {
+  font-size: 3.8vh;
+  display: block;
+  text-align: center;
+  height: 10vh;
+  line-height: 2.6;
+}
+
+.box:hover { flex: 1 1 50%; }
+.box:hover > img {
+  width: 100%;
+  height: 100%;
+}
+#searchbtn{
+	border: 1px solid grey;  
+	height: 65%;
+	font-size: 67%;
+	display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: grey;
+    background-color: black;
+    border-radius: 9%;
+}
+#searchbtn:hover{
+	background-color: grey;
+	color: white;
+	transition: 0.2s;
+}
+iframe{
+	width: 100%; 
+	height: 700px;
+}
+.box{
+
+}
+@media screen and (max-width: 768px) {}

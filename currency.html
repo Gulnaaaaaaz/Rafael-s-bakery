@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Currency Calculator</title>
+</head>
+<style>
+
+</style>
+<body>
+<form>
+	The value of iPhone (USD or $): <input type="text" id="currency" /><br><br>
+	<input type="button" onClick="convertBy()" Value="Convert" />
+<p>KZT: <br>
+<span id="KZT"></span>
+</p>
+</form>
+</body>
+<script>
+	function convertBy(){
+		num = document.getElementById("currency").value;
+		document.getElementById("KZT").innerHTML = num * 416.64;
+	}
+</script>
+</html>
